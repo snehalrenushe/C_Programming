@@ -25,7 +25,6 @@ int main()
             }
             W_cnt++;
         }
-
     }
 
     printf("\nWord count of given string is %d",W_cnt);
