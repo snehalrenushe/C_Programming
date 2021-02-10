@@ -1,34 +1,35 @@
 #include<stdio.h>
 #include<conio.h>
 
-int Rec_Sum(int);
+int Addition(int);
 
 int main()
 {
-    int No=0,Res=0;
+    int No = 0,temp = 0;
 
-    printf("\nEnter count to add the given numbers : ");
+    printf("\nEnter any count to find its sum : ");
     scanf("%d",&No);
 
-    Res=Rec_Sum(No);
+    temp = Addition(No);
 
-    printf("\nSum of given numbers is %d",Res);
+    printf("\nSum of given numbers is %d ",temp);
 
     getch();
     return 0;
 }
 
-int Rec_Sum(int Num)
-
+int Addition(int Num)
 {
-    static int i=0,sum=0;
-    int cnt=0;
+    static int i = 1,sum = 0;
+    int cnt = 0;
 
-    if(i<Num)
+    if(i <= Num)
     {
-        printf("\nNumber %d = ",++i);
+        printf("\nEnter Number %d = ",i++);
         scanf("%d",&cnt);
-        sum=Rec_Sum(Num)+cnt;
+
+        sum = Addition(Num) + cnt;
     }
+
     return sum;
 }
