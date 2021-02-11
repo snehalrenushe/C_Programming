@@ -5,7 +5,7 @@ int Reverse(int);
 
 int main()
 {
-    int No=0,Rev=0;
+    int No = 0,Rev = 0;
 
     printf("\nEnter a number to print its Reverse Number : ");
     scanf("%d",&No);
@@ -22,7 +22,7 @@ int main()
 int Reverse(int Num)
 
 {
-    static int i=0;
+    static int i = 0;
 
     if(Num==0)
     {
