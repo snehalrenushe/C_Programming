@@ -11,7 +11,6 @@ struct student
 };
 
 int main()
-
 {
     struct student std1 = {21,"snehal","Renushewadi",93.8865};
 
