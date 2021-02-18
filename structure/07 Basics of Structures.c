@@ -11,6 +11,7 @@ struct student
 };
 
 int main()
+
 {
     struct student std1 = {21,"snehal","Renushewadi",93.8865};
 
@@ -21,7 +22,7 @@ int main()
     printf("\nStudent Details are Given are => \n\n\tRoll No - %d.\n\tName - %s.\n\tCity - %s.\n\tPercentage - %0.2f.\n",std1.RollNo,std1.Name,std1.City,std1.Per);
     printf("\n*******************************************************************************************");
 
-    getch();
+    getche();
 
     strcpy(std1.Name,"Abhi Yadav");
     strcpy(std1.City,"Karad");
@@ -39,7 +40,7 @@ int main()
 
     printf("\nStudent Details are Given are => \n\n\tRoll No - %d.\n\tName - %s.\n\tCity - %s.\n\tPercentage - %0.2f.\n\n\n\n",std3.RollNo,std3.Name,std3.City,std3.Per);
 
-    getch();
+    getche();
 
     return 0;
 }
