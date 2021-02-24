@@ -17,18 +17,16 @@ int main()
     printf("\nQuotient of given Numbers is %d.",Res);
     printf("\nRemainder of given Numbers is %d.",Temp);
 
-    getch();
+    getche();
     return 0;
 }
 
 int Find_Quotient(int N1,int N2)
-
 {
     return N1/N2;
 }
 
 int Find_Remainder(int N1,int N2)
-
 {
     return N1%N2;
 }
