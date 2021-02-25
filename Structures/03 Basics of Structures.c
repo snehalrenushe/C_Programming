@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-#include<string.h>
 
 struct student
 {
@@ -12,7 +11,6 @@ struct student
 };
 
 int main()
-
 {
     struct student std1,std2;
 
