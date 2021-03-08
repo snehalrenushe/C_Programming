@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-
 #define pi 3.14
 
 float Area_Ellipse(float,float);
@@ -19,8 +18,10 @@ int main()
 
     getch();
     return 0;
+
 }
 float Area_Ellipse(float R1,float R2)
+
 {
     float area;
 
