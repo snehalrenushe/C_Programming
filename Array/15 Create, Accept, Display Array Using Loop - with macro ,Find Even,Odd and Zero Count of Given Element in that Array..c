@@ -57,14 +57,14 @@ int main()
         scanf("%d",&No[i]);
     }
 
-    printf("\n*******Elements Displaying**************\n");
+    printf("\n******* Elements Displaying **************\n");
 
     for(i = 0 ; i < Num ; i++)
     {
         printf("\n \t %d Elements is : %d",i,No[i]);
     }
 
-    printf("\n\n*******Even Elements Counting**************\n");
+    printf("\n\n******* Even Elements Counting **************\n");
 
     Ret = Even_Count_Element(No,i);
 
@@ -72,7 +72,7 @@ int main()
     printf("\n Even Count of given array elements is = %d",Ret);
     printf("\n-----------------------------------------------");
 
-    printf("\n\n*******Odd Elements Counting**************\n");
+    printf("\n\n******* Odd Elements Counting **************\n");
 
     Ret = Odd_Count_Element(No,i);
 
@@ -80,7 +80,7 @@ int main()
     printf("\n Odd Count of given array elements is = %d",Ret);
     printf("\n-----------------------------------------------");
 
-    printf("\n\n*******Zero Elements Counting**************\n");
+    printf("\n\n******* Zero Elements Counting **************\n");
 
     Ret = Zero_Count_Element(No,i);
 
