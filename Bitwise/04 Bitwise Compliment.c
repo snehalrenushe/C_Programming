@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 
 int main()
@@ -13,6 +12,5 @@ int main()
 
     printf("\n Bitwise Compliment  Between %d ^ %d = %d.",No1,Res);
 
-    getch();
     return 0;
 }
