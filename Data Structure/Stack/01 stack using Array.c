@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-
 #define MAX 5
 
 int Stack[MAX];
@@ -134,7 +133,6 @@ int main()
     {
         printf("\n\tValue is at %d position...",Temp);
     }
-
 
     getch();
 
