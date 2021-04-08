@@ -4,7 +4,8 @@
 int main()
 {
     char src[50]="";
-    int i=0,W_cnt=0;
+    int i=0;
+    int W_cnt=0;
 
     printf("\nEnter any string to count words in it : ");
     gets(src);
@@ -22,9 +23,9 @@ int main()
             {
                i++;
             }
-
             W_cnt++;
         }
+
     }
 
     printf("\nWord count of given string is %d",W_cnt);
