@@ -10,7 +10,7 @@ int main()
 
     Res = ~No1;
 
-    printf("\n Bitwise Compliment  Between %d ^ %d = %d.",No1,Res);
+    printf("\nBitwise Compliment  Between %d ^ %d = %d.",No1,Res);
 
     return 0;
 
