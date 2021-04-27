@@ -63,6 +63,7 @@ void Insert_Last(struct Node **First,int N)
     return;
 
 }
+
 int Count_Position(struct Node *First)
 {
     int Cnt = 0;
@@ -78,6 +79,7 @@ int Count_Position(struct Node *First)
 
     return Cnt;
 }
+
 void Insert_At_Specific_Position(struct Node **First,int Num,int Cnt)
 {
     int Ele_cnt = Count_Position(*First);
