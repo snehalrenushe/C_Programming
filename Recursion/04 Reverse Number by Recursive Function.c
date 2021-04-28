@@ -20,7 +20,6 @@ int main()
 }
 
 int Reverse(int Num)
-
 {
     static int i = 0;
 
