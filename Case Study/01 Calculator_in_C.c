@@ -16,7 +16,7 @@ int main()
 {
     int choice=0,No1=0,No2=0;
 
-    for(;;)                        /// Unconditional loop
+    for(;;)                              /// Unconditional loop
     {
         printf("\n************************ Calculator in 'c' ******************************\n");
 
