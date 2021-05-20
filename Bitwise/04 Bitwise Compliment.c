@@ -13,5 +13,4 @@ int main()
     printf("\nBitwise Compliment  Between %d ^ %d = %d.",No1,Res);
 
     return 0;
-
 }
