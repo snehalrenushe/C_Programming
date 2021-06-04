@@ -17,18 +17,17 @@ int main()
 }
 
 int Fibonacci_series(int Num)
-
 {
-   static int No1=0,No2=1,No3=0;
+   static int No1=1,No2=0,No3=0;
 
    if(Num>0)
     {
+        printf("%d ",No3);
 
-        No3 = No1+No2;
+        No3 = No1 + No2;
         No1 = No2;
         No2 = No3;
 
-        printf("%d ",No3);
         Fibonacci_series(Num-1);
     }
 
