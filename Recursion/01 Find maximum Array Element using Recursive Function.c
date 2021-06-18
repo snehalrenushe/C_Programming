@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-
 #define Size 5
 
 void Accept_Array_Elements(int*);
