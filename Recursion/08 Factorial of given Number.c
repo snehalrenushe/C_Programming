@@ -19,7 +19,6 @@ int main()
 }
 
 int Factorial(int Num)
-
 {
     static int Res = 1;
 
