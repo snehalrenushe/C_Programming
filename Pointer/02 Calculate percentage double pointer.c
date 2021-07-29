@@ -16,6 +16,7 @@ float Calculate_Tot_Per(int *T,int *M)
     return per;
 
 }
+
 int main()
 {
     int i = 0 , Total = 0;
