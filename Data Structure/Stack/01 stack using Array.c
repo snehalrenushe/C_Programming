@@ -1,4 +1,4 @@
-///Stack using Array
+///Stack Implementation using Array
 
 #include<stdio.h>
 #include<conio.h>
