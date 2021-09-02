@@ -136,6 +136,7 @@ void Insert_At_Specific_Position(struct Node **First,int Num,int Cnt)
         New->Link = Temp->Link;
         Temp->Link = New;
     }
+
     return;
 }
 
@@ -247,5 +248,3 @@ int main()
 
     return 0;
 }
-
-
