@@ -142,20 +142,24 @@ void Insert_At_Specific_Position(struct Node **First,int Num,int Cnt)
 
 void Delete_First(struct Node **First)
 {
+    struct Node *Temp = *First;
     if(NULL == *First)
     {
         printf("\nList is Empty...can't delete any element !!! ");
+        return;
+    }
+    else if(Temp -> Link == NULL)
+    {
+        *First = NULL;
     }
     else
     {
-        struct Node *Temp = *First;
-
         *First = Temp->Link;
-
-        printf("\n\n Deleted First element in list is = %d.",Temp -> Data);
-
-        free(Temp);
     }
+
+    printf("\n\n Deleted First element in list is = %d.",Temp -> Data);
+
+    free(Temp);
 
     return;
 }
@@ -221,11 +225,11 @@ int main()
     Insert_First(&Head,200);
     Insert_First(&Head,300);
 
-    printf("\n\n--------------------------------------------------------------------");
-
     Insert_Last(&Head,400);
     Insert_Last(&Head,500);
     Insert_Last(&Head,600);
+
+    Display_Link_List(Head);
 
 
     printf("\n\n--------------------------------------------------------------------");
