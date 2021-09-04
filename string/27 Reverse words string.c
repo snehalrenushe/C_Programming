@@ -1,5 +1,5 @@
 /* Input :  India is my Country.
-   Output : Country my is India.*/
+   Output : .Country my is India*/
 
 #include<stdio.h>
 #include<conio.h>
@@ -20,7 +20,7 @@ int main()
     while(i > 0)        ///To Reverse the whole String
     {
         Pstr[j] = Cstr[--i];
-        ++j;
+        j++;
     }
 
     Pstr[j] = '\0';
@@ -40,8 +40,6 @@ int main()
         }
     }
 
+    getch();
     return 0;
 }
-
-
-
