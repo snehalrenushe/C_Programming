@@ -231,7 +231,6 @@ int main()
 
     Display_Link_List(Head);
 
-
     printf("\n\n--------------------------------------------------------------------");
 
     Delete_First(&Head);
