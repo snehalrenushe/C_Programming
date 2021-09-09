@@ -94,27 +94,7 @@ void Insert_At_Specific_Position(struct Node **First,int Num,int Cnt)
     }
     else if(Cnt >= Ele_cnt + 1)
     {
-        if(Cnt == Ele_cnt + 1)
-        {
-            Insert_Last(First,Num);
-        }
-        else
-        {
-            printf("\nPosition you want is not valid did you want to insert element at %d position ?? (Y/N)",Ele_cnt + 1);
-
-            char ch = getchar();
-
-            fflush(stdin);
-
-            if(ch == 'Y' || ch == 'y')
-            {
-                Insert_Last(First,Num);
-            }
-            else
-            {
-                printf("\n ERROR : Your Element is not been Inserted");
-            }
-        }
+        Insert_Last(First,Num);
     }
     else
     {
