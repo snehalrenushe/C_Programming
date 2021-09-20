@@ -94,7 +94,27 @@ void Insert_At_Specific_Position(struct Node **First,int Num,int Cnt)
     }
     else if(Cnt >= Ele_cnt + 1)
     {
-        Insert_Last(First,Num);
+        if(Cnt == Ele_cnt + 1)
+        {
+            Insert_Last(First,Num);
+        }
+        else
+        {
+            printf("\nPosition you want is not valid did you want to insert element at %d position ?? (Y/N)",Ele_cnt + 1);
+
+            char ch = getchar();
+
+            fflush(stdin);
+
+            if(ch == 'Y' || ch == 'y')
+            {
+                Insert_Last(First,Num);
+            }
+            else
+            {
+                printf("\n ERROR : Your Element is not been Inserted");
+            }
+        }
     }
     else
     {
@@ -172,6 +192,43 @@ void Delete_Last(struct Node **First)
     return;
 }
 
+void Delete_At_Specific_Position(struct Node **First,int Cnt)
+{
+    int Ele_cnt = Count_Position(*First);
+
+    if(Cnt <= 0 || Cnt >= (Cnt+1))
+    {
+        printf("There Is No Position Available !");
+    }
+    else if(Cnt == 1)
+    {
+        Delete_First(First);
+    }
+    else if(Cnt == Ele_cnt)
+    {
+        Delete_Last(First);
+    }
+    else
+    {
+        struct Node *Temp = *First , *Temp2 = NULL;
+
+        while(Cnt > 2)
+        {
+            Temp = Temp -> Link;
+            Cnt--;
+        }
+
+        Temp2 = Temp -> Link;
+
+        printf("\n Deleted element in list is = %d.",Temp2 -> Data);
+
+        Temp -> Link = Temp2 -> Link;
+        free(Temp2);
+    }
+
+    return;
+}
+
 void Display_Link_List(struct Node *First)
 {
     if(NULL == First)
@@ -205,11 +262,18 @@ int main()
     Insert_First(&Head,200);
     Insert_First(&Head,300);
 
+    Delete_Last(&Head);
+
+
     Insert_Last(&Head,400);
     Insert_Last(&Head,500);
     Insert_Last(&Head,600);
 
+    Delete_First(&Head);
+
     Display_Link_List(Head);
+
+    Insert_At_Specific_Position(&Head,900,1);
 
     printf("\n\n--------------------------------------------------------------------");
 
@@ -227,6 +291,8 @@ int main()
     getch();
 
     Insert_At_Specific_Position(&Head,900,6);
+    Display_Link_List(Head);
+    Delete_At_Specific_Position(&Head,2);
     Display_Link_List(Head);
 
     return 0;
